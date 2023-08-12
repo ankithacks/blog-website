@@ -37,7 +37,7 @@ router.post('/register', async (req, res)=>{
 // }  and press send....if the user is present then it will show the user present of the database....and if not then wrong credentials are shown
 router.post('/login', async(req,res)=>{
     try {
-        const user=await User.findOne({username: req.body.username})
+        const user=await User.findOne({"username": req.body.username})
         if(!user){
             return res.status(400).json("wrong credentials");
         }
@@ -50,6 +50,7 @@ router.post('/login', async(req,res)=>{
         const {password, ...others} = user._doc;
         return res.status(200).json(others);
     } catch (error) {
+        console.log(error);
         return res.status(500).json(error);
     }
 })

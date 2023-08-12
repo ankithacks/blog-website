@@ -29,7 +29,9 @@ mongoose
     // useCreateIndex: true
     // useFindAndModify:true
   })
-  .then(console.log("connect to mongoDb"))
+  .then(() => {
+    console.log("connect to mongoDb");
+  })
   .catch((err) => console.log(err));
 
 // these next lines upto the comment section is the multer code to upload file
