@@ -13,7 +13,7 @@ export default function Settings() {
   const [success, setSuccess]=useState(false);
     
   const {user, dispatch }=useContext(Context);
-  const PF="http://localhost:5000/images/" 
+  const PF="https://blog-website-statuscode0.onrender.com/api/images/" 
 
   const handleSubmit=async (e)=>{
     e.preventDefault();
@@ -29,14 +29,14 @@ export default function Settings() {
       data.append("file",file);
       updatedUser.profilePic= filename;
       try {
-        await axios.post("/upload", data)
+        await axios.post("https://blog-website-statuscode0.onrender.com/api/upload", data)
       } catch (error) {
         console.log(error);
       }
     }
     try {
 
-        const res= await axios.put("/users/"+user._id, updatedUser);
+        const res= await axios.put("https://blog-website-statuscode0.onrender.com/api/users/"+user._id, updatedUser);
         setSuccess(true);
         dispatch({type:"UPDATE_SUCCESS", payload:res.data})
     } catch (error) {
