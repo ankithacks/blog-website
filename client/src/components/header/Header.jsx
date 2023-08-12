@@ -4,10 +4,10 @@ export default function Header() {
   return (
     <div className="header">
         <div className="headerTitles">
-            <span className='headerTitleSm'>React & node.js</span>
-            <span className='headerTitleLg'>Blog</span>
+            <span className='headerTitleSm'>Welcome to the</span>
+            <span className='headerTitleLg'>Interaction area</span>
         </div>
-        <img className='headerImage' src="https://images.unsplash.com/photo-1530878955558-a6c31b9c97db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmljZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+        <img className='headerImage' src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" />
     </div>
   )
 }

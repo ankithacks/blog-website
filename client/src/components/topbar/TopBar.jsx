@@ -1,19 +1,19 @@
-import { useContext } from "react";
+// import { useContext } from "react";
 import "./TopBar.css";
 import { Link } from "react-router-dom";
-import { Context } from "../../context/Context";
+// import { Context } from "../../context/Context";
 
 export default function Topbar() {
   
-  const {user, dispatch}= useContext(Context);
-  const PF="http://localhost:5000/images/"
+  // const {user, dispatch}= useContext(Context);
+  // const PF="http://localhost:5000/images/"
 
 
   // const user=false;
   // false means NO user is logged into
-  const handleLogout=()=>{
-    dispatch({type:"LOGOUT"})
-  }
+  // const handleLogout=()=>{
+  //   dispatch({type:"LOGOUT"})
+  // }
   
   return (
     <div className="top">
@@ -28,18 +28,17 @@ export default function Topbar() {
           <li className="topListItem">
             <Link className="link" to={"/"} >HOME</Link>
           </li>
-          <li className="topListItem"><Link className="link" to={"/"} >ABOUT</Link></li>
-          <li className="topListItem"><Link className="link" to={"/"} >CONTACT</Link></li>
+          <li className="topListItem"><Link className="link" to={"/"} >CONTACT US</Link></li>
           <li className="topListItem"><Link className="link" to={"/write"} >WRITE</Link></li>
-          <li className="topListItem" onClick={handleLogout}>
+          {/* <li className="topListItem" onClick={handleLogout}> */}
             {/* <Link className="link" to={"/"} > */}
-              {user && "LOGOUT"}
+              {/* {user && "LOGOUT"} */}
               {/* this above line means that if there is a user logged in then only show else nope */}
             {/* </Link> */}
-          </li>
+          {/* </li> */}
         </ul>
       </div>
-      <div className="topRight">
+      {/* <div className="topRight">
         {
           user ? (
             <Link to="/settings">
@@ -47,7 +46,6 @@ export default function Topbar() {
 
               <img
                 className="topImg"
-                // src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"  pasted this in the database only directly
                 src={PF+ user.profilePic}
                 alt=""
               /> 
@@ -64,7 +62,7 @@ export default function Topbar() {
           )
         }
         <i className="topSearchIcon fas fa-search"></i>
-      </div>
+      </div> */}
     </div>
   );
 }
