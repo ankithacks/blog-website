@@ -1,0 +1,60 @@
+.post{
+    width: 450px;
+    margin-top: 0px;
+    margin-right: 25px;
+    margin-bottom: 40px;
+    margin-left: 25px;   
+}
+
+.postImg{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.postInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postCat{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    color: #be9646;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.postTitle{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+.postDate{
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #999;
+    margin-top: 15px;
+}
+
+.postDescription{
+    font-family: 'Varela Round', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #0af05e;
+    line-height: 24px;
+    margin-top: 20px;
+    /* the next line represent that if the blg content is more than 5 lines, then make it ... after the completion of the word of the 5th line */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}

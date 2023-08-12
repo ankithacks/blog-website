@@ -1,0 +1,103 @@
+.singlePost{
+    flex: 9;
+}
+
+.singlePostWrapper{
+    padding: 20px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.singlePostImg{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.singlePostTitle{
+    text-align: center;
+    margin: auto;
+    font-family: 'Lora', sans-serif;
+    font-size: 20px;
+    border-bottom: 3px solid rgb(207, 67, 228);
+}
+
+.singlePostEdit{
+    float: right;  /*this will move them to the right */
+    font-size: 20px;
+}
+
+.singlePostIcon{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+    color: teal;
+}
+
+.singlePostIcon:last-child{
+    color: tomato;
+}
+
+/* note that this first and last child mean the same as assigning a classname in html and then using that to design  */
+
+.singlePostInfo{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #ba9656;
+    margin-top: 30px;
+}
+
+.singlePostDesc{
+    color: black;
+    font-size: medium;
+    line-height: 25px;
+}
+
+.singlePostDesc::first-letter{
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: 600px;
+}
+
+/* this above line means that the first letter of the sentence is affected */
+
+
+.singlePostTitleInput{
+    margin: 10px;
+    font-family: "Lora", serif;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+}
+
+.singlePostTitleInput:focus{
+    outline: none;
+}
+
+.singlePostDescInput{
+    border: none;
+    color: #666;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.singlePostDescInput:focus{
+    outline: none;
+}
+
+.singlePostButton{
+    border: none;
+    background-color: teal;
+    padding: 5px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
+}
